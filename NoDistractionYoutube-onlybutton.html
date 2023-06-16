@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-color: #213363;
+      color: #d3d04f;
+    }
+    a {
+      text-decoration: none;
+      color: #d3d04f;
+    }
+    h3 {
+      background-color: #17594a;
+      color: white;
+      padding: 20px;
+      font-size: 1.5em;
+    }
+    .subject-buttons {
+      padding: 10px;
+      font-weight: bold;
+    }
+  </style>
+
+  <body style="text-align: center">
+    <h3>Revision Batch</h3>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('english-revision')"
+    >
+      English
+    </button>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('reasoning-revision')"
+    >
+      Rasoning
+    </button>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('maths-revision')"
+    >
+      Maths
+    </button>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('science-revision')"
+    >
+      Science
+    </button>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('static-revision')"
+    >
+      Static GK
+    </button>
+
+    <h3>Mahabharat Batch</h3>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('english-maha')"
+    >
+      English
+    </button>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('reasoning-maha')"
+    >
+      Rasoning
+    </button>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('maths-maha')"
+    >
+      Maths
+    </button>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('science-maha')"
+    >
+      Science
+    </button>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('static-maha')"
+    >
+      Static GK
+    </button>
+    <button
+      type="button"
+      class="subject-buttons"
+      onclick="myFunctionEng('history-maha')"
+    >
+      History & Polity
+    </button>
+
+    <h3>After Selecting Subject click to OPEN!!</h3>
+    <p id="demo"></p>
+    <a href="" id="youtubelink"
+      ><button class="subject-buttons">Open</button></a
+    >
+
+    <script>
+      function myFunctionEng(sub) {
+        if (sub == "english-maha") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ6Le3t_a3FZjgcRpaOHxuHQ";
+        } else if (sub == "reasoning-maha") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ5blSVUAFNGDpHY0pKSPwzA";
+        } else if (sub == "maths-maha") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ4ovQ0sBDkVppGa_FjwztPB";
+        } else if (sub == "science-maha") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ5BR1cIwrJi4HnmkISPDJE7";
+        } else if (sub == "static-maha") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ7KYza9utoiABLVmHnEo_bI";
+        } else if (sub == "history-maha") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ6t-iS4XednRun7T3A4zDE1";
+        } else if (sub == "english-revision") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ6Le3t_a3FZjgcRpaOHxuHQ";
+        } else if (sub == "science-revision") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ6Rjp8wSaaosHOIPHpzs8vP";
+        } else if (sub == "reasoning-revision") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ72G8P1RxXfIFDJIyxdeexh";
+        } else if (sub == "static-revision") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ5-ZNFuUXiW-jjtvqiLgF_q";
+        } else if (sub == "maths-revision") {
+          var e1 =
+            "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ63L0P3AVTly2kArwUfzaDq";
+        }
+
+        document.getElementById("demo").innerHTML = e1;
+        document.getElementById("youtubelink").href = e1;
+      }
+    </script>
+  </body>
+</html>

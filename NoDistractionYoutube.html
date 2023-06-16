@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    body {
+      background-color: #2C3333;
+      color: #0E8388;
+      font-size: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 628px;
+      margin-bottom: 30px;
+    }
+    a {
+      text-decoration: none;
+      color: #d3d04f;
+    }
+    h1{
+       color: #d3d04f;
+      border: 3px solid #d3d04f;
+      padding: 20px;
+      margin: 0px 20%;
+    }
+    h3 {
+      background-color: #2E4F4F;
+      color: white;
+      padding: 20px;
+      font-size: 1.5em;
+    }
+    input{
+      font-size: 22px;
+      padding: 10px 5px 10px 20px;
+      margin-bottom: 20px;
+    }
+    .subject-buttons{
+      padding: 10px 35px;
+      font-size: 22px;
+      font-weight: bold;
+    }
+  </style>
+  
+<body style="text-align:center;">
+
+    <iframe id="video" width="" src="" allowfullscreen></iframe>
+    <h1>  
+            NoDistractionYoutube  
+    </h1>
+    <h2>Youtube Video ID</h2>
+    <p>
+        Change the default value to your youtube video ID( from : https://www.youtube.com/live/QHz0ZNMuKB0?feature=share
+      only <b>QHz0ZNMuKB0</b>) </br>
+        and then click the button below. 
+    </p>
+   
+    <input type="text" id="myText" value="QHz0ZNMuKB0" size="70"> <br>
+    <button class="subject-buttons" type="button" onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <!-- <a href="" id="youtube-link"><button class="subject-buttons">Youtube Link</button></a> -->
+
+    <h3>Revision Batch</h3>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('english-revision')">English</button>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('reasoning-revision')">Rasoning</button>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('maths-revision')">Maths</button>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('science-revision')">Science</button>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('static-revision')">Static GK</button>
+    
+
+    <h3>Mahabharat Batch</h3>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('english-maha')">English</button>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('reasoning-maha')">Rasoning</button>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('maths-maha')">Maths</button>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('science-maha')">Science</button>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('static-maha')">Static GK</button>
+    <button type="button" class="subject-buttons" onclick="myFunctionEng('history-maha')">History & Polity</button>
+    
+  
+      
+    <script>
+      
+    // Here the value is stored in new variable x 
+    function myFunction() {
+        var x = document.getElementById("myText").value;
+      var y = "https://www.youtube.com/embed/" + x
+      console.log(y)
+      document.getElementById("demo").innerHTML = y;
+      document.getElementById("video").src = y;
+    }
+    function myFunctionEng(sub) {
+      if (sub == 'english-maha') {var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ6Le3t_a3FZjgcRpaOHxuHQ"}
+      else if(sub == 'reasoning-maha'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ5blSVUAFNGDpHY0pKSPwzA"}
+      else if(sub == 'maths-maha'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ4ovQ0sBDkVppGa_FjwztPB"}
+      else if(sub == 'science-maha'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ5BR1cIwrJi4HnmkISPDJE7"}
+      else if(sub == 'static-maha'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ7KYza9utoiABLVmHnEo_bI"}
+      else if(sub == 'history-maha'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ6t-iS4XednRun7T3A4zDE1"}
+
+      else if(sub == 'english-revision'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ6Le3t_a3FZjgcRpaOHxuHQ"}
+      else if(sub == 'science-revision'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ6Rjp8wSaaosHOIPHpzs8vP"}
+      else if(sub == 'reasoning-revision'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ72G8P1RxXfIFDJIyxdeexh"}
+      else if(sub == 'static-revision'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ5-ZNFuUXiW-jjtvqiLgF_q"}
+      else if(sub == 'maths-revision'){var e1 = "https://www.youtube.com/embed/playlist?list=PLXTyt_wUBqQ63L0P3AVTly2kArwUfzaDq"}
+       
+      document.getElementById("demo").innerHTML = e1;
+      document.getElementById("video").src = e1;
+      document.getElementById("youtube-link").href = e1;
+    }
+    </script>
+</body>
+  
+</html>
